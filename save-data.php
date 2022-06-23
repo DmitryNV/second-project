@@ -1,3 +1,10 @@
+<?php
+$user = $_POST;
+$file = fopen(__DIR__ . '/vacancies.csv', 'a+');
+fputcsv($file, $user);
+fclose($file);
+$user = (object) $user;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +21,10 @@
     <title>Title</title>
 </head>
 <body>
-    Спасибо за ваши данные
-<a href="/">Вернуться на главную</a>
+    Спасибо за ваши данные, <?=$user->firstname . ' ' . $user->lastname?>
+    <div>
+        <a href="/">Вернуться на главную</a>
+    </div>
 </body>
 </html>
-<?php
-$parameters = $_POST;
-$file = fopen(__DIR__ . '/vacancies.csv', 'a+');
-fputcsv($file, $parameters);
-fclose($file);
+
