@@ -1,7 +1,16 @@
 html {
     font-size: 15px;
-    background-color: azure;
+    background-color:cornsilk;
 }
 a {
   color:crimson;
+}
+.top{
+    display: flex;
+}
+table,tr,th,td,caption{
+    border: 1px solid #0055ff;
+    font-family: 'Courier New', "Courier", monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
 }

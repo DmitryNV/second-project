@@ -6,18 +6,23 @@
     <meta name="author" content="Dmitriy Novikov">
     <meta name="description" content="This page about products which contains the information about fast food">
     <link rel="icon" href="images/logo.jpg">
-    <link rel="stylesheet" href="css/main.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=5">
     <title>
         Есть поесть!
     </title>
 </head>
 <body>
 <header>
-    <hr>
+    <div class="top">
+        <section> <img src="icons/logo-white.svg" alt=""> </section>
+        <section> <img src="icons/Ico_small_time.svg" width="18"> Работаем ежедневно с 10-00-23-00</section>
+    <section> <img src="icons/Ico_small_place.svg" width="18">Наш адрес ООО ЕстьПоесть, 246034, г.Гомель, ул.Лещинская, д.153Б</section>
+    <section> <img src="icons/Ico_small_phone.svg">Life +375(25)639-96-95</section>
+    </div>
     <nav>
         <ul>
             <li>
-                <a href="#goods">Goods</a>
+                <a href="#товары">Мы предлагаем</a>
             </li>
             <li>
                 <a href="#navigations">Navigation</a>
@@ -25,40 +30,38 @@
             <li>
                 <a href="/aboutus">О нас</a>
             </li>
-            <li>
-                Переход на новую страницу<a href="https://support.google.com/chrome/?p=help&ctx=keyboard#topic=9796470" target="_blank"> здесь</a>
-            </li>
         </ul>
+        <section>
+            Наши партнеры<a href="https://estpoest-gomel.by/" target="_blank"> здесь</a>
+        </section>
     </nav>
     <h1>Приветствуем Вас на нашем сайте!</h1>
     <hr>
-    <!--    TODO добавить реальный контент на страницу, заполнить её наименованиями еды и приведствием-->
-
 </header>
 <main>
     <section id="navigations">
-        <h2>Почему Вы должны выбрать нас:</h2>
-        <ul class="advantages">
+        <ul>
             <li>
-                <a href="https://estpoest-gomel.by/" target="_blank">
-                    Доставка по всему городу;
-                </a>
+                <img src="icons/Ico_drinks.svg" width="18" alt=""> Напитки
             </li>
             <li>
-                Огромный выбор;
+            <img src="icons/Ico_pizza.svg" width="18">Пицца
             </li>
             <li>
-                Скидки каждую пятницу;
+                <img src="icons/Ico_sushi.svg" width="18"> Суши;
             </li>
             <li>
-                Каждому заказчику по истечению часа после заказа, товар достается бесплатно;
+                <img src="icons/Ico_shoarma.svg" width="18">Шаурма;
             </li>
             <li>
-                По оформлению двух товаров, на третий скидка 30%;
+                <img src="icons/Ico_promos.svg" width="18" alt=""> Скидки
+            </li>
+            <li>
+                <img src="icons/Ico_basket%20(1).svg"width="18" alt=""> Корзина
             </li>
         </ul>
     </section>
-    <section id="goods">
+    <section id="товары">
         <details>
            <summary>
                Наши оснавные категории
@@ -89,10 +92,153 @@
                 <dd>Акции</dd>
             </dl>
         </details>
+        <details>
+            <summary>
+                Подробно о наших пиццах
+            </summary>
+            <table>
+                <thead>
+                <tr>
+                    <th>№</th>
+                    <td>Название</td>   <td>Время доставки</td>   <td>Каллории</td><td>Цена</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Баварская</td>      <td>30-40 минут</td>      <td>450 грамм</td> <td>5 рублей</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>Палермо</td>    <td> 45-50 минут</td>       <td> 500 грамм</td> <td> 6 рублей</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>Гавайская</td>    <td> 55-50 минут</td>       <td> 300 грамм</td> <td> 4 рублей</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>Шаурма</td> <td colspan="3">Информация отсутствует</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>
+                        Гавайская c
+                        ананасами
+                    </td>               <td rowspan="3"> 55-50 минут</td>   <td> 315 грамм</td> <td rowspan="2"> 4 рублей</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>Гавайская</td>                                           <td> 300 грамм</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="5">
+                        За подробной информацией обращайтесь к нашему виртуальному помощнику
+                    </td>
+                </tr>
+                </tfoot>
+            </table>
+        </details>
     </section>
-    <span>
-        dsdd
-    </span>
+    <section>
+        <form action="save-data.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="firstname">Имя</label>
+                    </td>
+                    <td>
+                        <input
+                                name="firstname"
+                                type="text"
+                                placeholder="Ваше имя"
+                                id="firstname"
+                                required
+                        >
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lastname">Фамилия</label>
+                    </td>
+                    <td>
+                        <input
+                                name="lastname"
+                                type="text"
+                                placeholder="Ваше фамилия"
+                                id="lastname"
+                                required
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Электронная почта</label>
+                    </td>
+                    <td>
+                        <input
+                                name="email"
+                                type="email"
+                                placeholder="Электронная почта"
+                                id="email"
+                                required
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Телефон</label>
+                    </td>
+                    <td>
+                        <input
+                                name="phone"
+                                type="tel"
+                                placeholder="Телефон"
+                                id="phone"
+                                required
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Возрост</label>
+                    </td>
+                    <td>
+                        <input
+                                name="age"
+                                type="number"
+                                placeholder="Возрост"
+                                id="age" min="18" max="90" step="1" value="1"
+                                required
+                        >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="profession">Работа</label>
+                    </td>
+                    <td>
+                        <select
+                                name="profession"
+                                id="profession"
+                                required
+
+                        >
+                            <option value="cleaner">Уборщик</option>
+                            <option value="guard">Охрана</option>
+                            <option value="shop_assistant" selected>Продавец</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">
+                Отправить
+            </button>
+        </form>
+    </section>
 </main>
 <footer>
     <hr>
