@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<main>
+  <form action="index.html" method="get">
+    <table>
+      <tr>
+        <td>
+          <label for="firstmane">Имя</label>
+        </td>
+        <td>
+          <input name="firmsname"
+                 type="text"
+                 placeholder="Ваше имя"
+                 id="firstmane"
+                 required
+          >
+        </td>
+      </tr>
+      <label for="secondname">Фамилия</label>
+    <input name="secondname" type="text" placeholder="Фамилия" id="secondname">
+    </table>
+  </form>
+
+  <form action="index.html"></form>
+  <table>
+    <tr>
+      <td>
+        <label for="number">Номер</label>
+        <input
+        name="number"
+        placeholder="номер"
+        type="number"
+        id="number" min="1" max="15" step="1.5"
+        required
+        >
+      </td>
+      <td>
+        <select name="name"
+                id="name"
+                required
+        >
+
+          <option value="plumber">Сантехник</option>
+          <option value="carpenter">Плотник</option>
+          <option value="designer">Дизайнер</option>
+          </select>
+      </td>
+    </tr>
+  </table>
+
+  <hr/>
+  <form action="save-data.php" method="POST">
+    <input name="table" value="favorite_foods"
+           type="hidden">
+    <table>
+        <tr>
+          <td>
+            <label for="favoritedish">Любимые блюда</label>
+            <select
+                    name="favoritedish"
+                    required
+                    id="favoritedish"
+
+            >
+              <option value="shaurma">Шаурма</option>
+              <option value="pizza">Пицца</option>
+              <option value="sushi" selected>Суши</option>
+            </select>
+          <td>
+        </tr>
+        <tr>
+          <td>
+            <label for="name1">Имя</label>
+            <input name="name"
+                   type="text"
+                   id="name1"
+                   placeholder="Имя"
+            >
+          </td>
+        </tr>
+      <tr>
+        <td>
+          <label for="surname">Фамилия</label>
+          <input name="surname"
+                 type="text"
+                 id="surname"
+                 placeholder="Фамилия"
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="age">Возрост</label>
+          <input name="age"
+                 type="number"
+                 id="age"
+                 placeholder="Возрост"
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">Электронная почта</label>
+          <input name="email"
+                 type="email"
+                 id="email"
+                 placeholder="Электронная почта"
+          >
+        </td>
+      </tr>
+
+
+    </table>
+    <button type="submit">
+      Отправить
+    </button>
+  </form>
+  <hr/>
+  <form action="save-data.php" method="POST">
+    <input name="table" value="unfavorite_foods"
+           type="hidden">
+    <table>
+        <tr>
+          <td>
+            <label for="unfavoritedish">Нелюбимые блюда</label>
+            <select
+                    name="unfavoritedish"
+                    required
+                    id="unfavoritedish"
+            >
+              <option value="shaurma">Шаурма</option>
+              <option value="pizza">Пицца</option>
+              <option value="sushi" selected>Суши</option>
+            </select>
+          <td>
+        </tr>
+        <tr>
+          <td>
+            <label for="name2">Имя</label>
+            <input name="name"
+                   type="text"
+                   id="name2"
+                   placeholder="Имя"
+            >
+          </td>
+        </tr>
+      <tr>
+        <td>
+          <label for="surname2">Фамилия</label>
+          <input name="surname"
+                 type="text"
+                 id="surname2"
+                 placeholder="Фамилия"
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="age2">Возрост</label>
+          <input name="age"
+                 type="number"
+                 id="age2"
+                 placeholder="Возрост"
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email2">Электронная почта</label>
+          <input name="email"
+                 type="email"
+                 id="email2"
+                 placeholder="Электронная почта"
+          >
+        </td>
+      </tr>
+    </table>
+    <button type="submit">
+      Отправить
+    </button>
+  </form>
+</main>
+</body>
+</html>

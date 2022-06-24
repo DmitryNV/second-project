@@ -1,7 +1,18 @@
 <?php
 $user = $_POST;
-$file = fopen(__DIR__ . '/vacancies.csv', 'a+');
+echo 'data: ' . PHP_EOL;
+echo '<pre>';
+print_r($user);
+echo '</pre>';
+$table = $user['table'];
+
+if(!$table) {
+    echo 'no "table" name in data!' . PHP_EOL;
+}
+unset($user['table']);
+$file = fopen(__DIR__ . "/back/data/$table.csv", 'a+');
 fputcsv($file, $user);
+
 fclose($file);
 $user = (object) $user;
 ?>
@@ -25,6 +36,7 @@ $user = (object) $user;
     <div>
         <a href="/">Вернуться на главную</a>
     </div>
+<a href="pattern.html">Вернуться на петтерн</a>
 </body>
 </html>
 
