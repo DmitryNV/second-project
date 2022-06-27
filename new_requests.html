@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css?v=1">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<form action="index.html" method="post">
+    <fieldset>
+        <legend>
+            Личная информация о клиенте
+        </legend>
+        <table class="table">
+            <tr>
+                <td>
+                    <label for="name">Имя</label>
+                    <select name="name1"
+                            id="name1"
+                    >
+
+                        <optgroup label="Мужской пол">
+                            <option value="Valery">Валерий</option>
+                            <option value="Dmitriy">Дмитрий</option>
+                        </optgroup>
+                        <optgroup label="Женский пол">
+                            <option value="Alena">Алена</option>
+                            <option value="Svetlana">Светлана</option>
+                            <option value="Ekaterina">Екатерина</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="surname">Имя</label>
+                    <input
+                            type="text"
+                            name="surname"
+                            id="surname"
+                            placeholder="Ваша фамилия"
+                    >
+                    <select
+                            name="name"
+                            id="name"
+                            required
+                    >
+
+                        <option value="Ivanov">Иванов</option>
+                        <option value="Kleventsov">Клеменцов</option>
+                        <option value="Pusetskiy">Русецкий</option>
+                        <option value="Isaev">Исаев</option>
+                        <option value="Semenov">Семенов</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="age">Возрост</label>
+                    <input
+                            type="number"
+                            name="age"
+                            id="age"
+                            placeholder="Возрост"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Почта</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Ваша электронная почта"
+                            required
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button>
+                        Отправить
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br/>
+    <fieldset>
+        <legend>
+            Ваше мнение о пиццах
+        </legend>
+        <p>
+            <label for="pizza">Пиццы</label>
+            <input
+                    type="radio"
+                    id="pizza"
+                    name="food"
+                    value="pizza"
+            >
+        </p>
+
+        <p>
+            <label for="shaurma">Шаурма</label>
+            <input
+                    type="radio"
+                    id="shaurma"
+                    name="food"
+                    value="shaurma"
+            >
+        </p>
+
+        <p>
+            <label for="sushi">Суши</label>
+            <input
+                    type="radio"
+                    id="sushi"
+                    name="food"
+                    value="sushi"
+            >
+        </p>
+        <button>
+            Отправить
+        </button>
+    </fieldset>
+
+
+    <hr/>
+    <fieldset>
+        <legend>
+            Комментарии клиентов
+        </legend>
+        <table>
+            <thead>
+            <tr>
+                <td colspan="4">
+                    Отзывы о нас
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Качество
+                </td>
+                <td>
+                    Цена
+                </td>
+                <td>
+                    Обслуживающий персонал
+                </td>
+                <td>
+                    Сроки доставки
+                </td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    Отлично
+                </td>
+                <td>
+                    Неплохо
+                </td>
+                <td>
+                    Отличный
+                </td>
+                <td>
+                    Отлично
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+    <footer>
+        <fieldset>
+            <legend>
+                Оставьте свои отзывы
+            </legend>
+            <label for="message"></label>
+            <br/>
+            <textarea name="message"
+                      id="message"
+                      placeholder="Опишите подробнее о ваших впетчатлениях"
+                      rows="10" cols="30"
+            >
+        </textarea>
+        </fieldset>
+        <button type="submit">
+            Отправить
+        </button>
+        <button type="submit"
+                formaction="" formmethod="post">
+            Получить инфу по запросу
+        </button>
+        <button type="reset">
+            Сбросить
+        </button>
+        <footer>
+</form>
+</body>
+</html>
