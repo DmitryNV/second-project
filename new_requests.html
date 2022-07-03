@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<form action="index.html" method="post">
+<form action="https://httpbin.org/post" method="post">
     <fieldset>
         <legend>
             Личная информация о клиенте
@@ -176,23 +176,19 @@
     </fieldset>
     <footer>
         <fieldset>
-            <legend>
-                Оставьте свои отзывы
-            </legend>
-            <label for="message"></label>
+            <legend>Оставьте свои отзывы</legend>
             <br/>
-            <textarea name="message"
+            <textarea
+                      name="message"
                       id="message"
                       placeholder="Опишите подробнее о ваших впетчатлениях"
-                      rows="10" cols="30"
-            >
+                      rows="10" cols="30">
         </textarea>
         </fieldset>
         <button type="submit">
             Отправить
         </button>
-        <button type="submit"
-                formaction="" formmethod="post">
+        <button type="submit">
             Получить инфу по запросу
         </button>
         <button type="reset">

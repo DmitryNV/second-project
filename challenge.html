@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dmitriy_Novikov">
+    <meta name="description"  content="market Gomel food">
+    <meta name="keywords" content="pizza shaurma sushi">
+    <link rel="icon" href="icons/Ico_drinks.svg">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Купи у нас!</title>
+</head>
+    <body>
+<header>
+    <div>
+        <section>
+            Главная
+        </section>
+        <section>
+            <a href="#товары">Продукция</a>
+        </section>
+        <section>
+            О компании
+        </section>
+        <section>
+            Корзина
+        </section>
+    </div>
+</header>
+    <main>
+
+
+        <br/>
+        <div>
+            <nav>
+                <details>
+                    <summary>
+            Продукты питания
+                    </summary>
+            <section id="товары">
+                Рыба
+            </section>
+            <section>
+                Молоко
+            </section>
+            <section>
+                Мясо
+            </section>
+            <section>
+                Хлеб
+            </section>
+                </details>
+            </nav>
+        </div>
+
+        <div>
+<table>
+    <thead>
+    <tr>
+        <td>
+           Наименование продукта
+        </td>
+        <td>
+           Производитель
+        </td>
+        <td>
+           Цена
+        </td>
+        <td>
+            Грамм
+        </td>
+    </tr>
+        </thead>
+
+    <tbody>
+    <tr>
+        <td>
+    Сменатна
+        </td>
+        <td>
+    Брест-Литовская
+        </td>
+        <td rowspan="3">
+        1.70
+        </td>
+        <td>
+    450
+        </td>
+    </tr>
+    <tr>
+        <td>
+    Сменатна
+        </td>
+        <td>
+    Рогачевская
+        </td>
+        <td>
+    480
+        </td>
+    </tbody>
+</table>
+        </div>
+
+        <hr/>
+        <div>
+        <form action="save-data.php" method="get">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Имя</label>
+                    </td>
+                    <td>
+                <input type="text"
+                        name="name"
+                       id="name"
+                       placeholder="Имя"
+                >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="surname">Фамилия</label>
+                    </td>
+                    <td>
+                <input type="text"
+                        name="surname"
+                       id="surname"
+                       placeholder="Фамилия"
+                >
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+
+        <div>
+            <form action="save-data.php" method="get">
+            <table>
+                <tr>
+                    <td>
+                        <label for="товары">Товары</label>
+                    </td>
+                    <td>
+                        <select
+                                name="goods"
+                                id="goods"
+                                required
+                        >
+                            <optgroup label="группы товаров">
+                        <option value="бананы">Бананы</option>
+                        <option value="хлеб">Хлеб</option>
+                        <option value="конфеты">Конфеты</option>
+                        </optgroup>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+                <button type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+
+        <div>
+            <figure>
+                <figcaption>
+                    Смотри о нас
+                </figcaption>
+            <img src="images/vacation.jfif" width="30%" title="Photo">
+            </figure>
+        </div>
+        <a href="images/pizza1.avif" download>Скачать лого</a>
+    </main>
+<footer>
+    <div>
+        <table>
+            <tr><td><img src="icons/Ico_drinks.svg" width="18" alt=""> Напитки</td>
+            <td><img src="icons/Ico_sushi.svg" alt="" width="18"> Суши</td></tr>
+
+            <tr><td><img src="icons/Ico_shoarma.svg" alt="" width="18">Шаурма;</td>
+            <td><img src="icons/Ico_pizza.svg" alt="" width="18">Пицца</td></tr>
+
+            <tr><td><img src="icons/Ico_promos.svg" width="18" alt=""> Скидки</td>
+            <td><img src="icons/Ico_basket%20(1).svg"width="18" alt=""> Корзина</td></tr>
+
+        </table>
+    </div>
+</footer>
+</body>
+</html>

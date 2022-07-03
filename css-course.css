@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-purple {
+    background-color: #7f7faa;
+}
+
+.text-white {
+
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.margin {
+    margin: 20px;
+}
+
+.padding-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.py {
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.px {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.font-pacifico {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.button {
+    border-top-right-radius: 50%;
+    border-color: white;
+    color: white;
+    background-color: darkturquoise;
+    font-size: 20px;
+    font-weight:bold;
+    text-transform:capitalize;
+}
