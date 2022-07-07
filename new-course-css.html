@@ -4,15 +4,25 @@
     <link rel="icon" href="icons/main_logo.svg">
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css-course.css?v=6">
+    <!--    css styles start-->
+<!--    <link rel="stylesheet" href="css-course.css?v=8">-->
+    <!--    css styles end-->
+
+    <!--    css fonts start-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!--    css fonts end-->
 </head>
 <body>
-<header class="bg-purple flex justify-between align-center padding-header font-pacifico" style="color:white">
+<header class="flex justify-between align-center padding-header font-pacifico relative" style="color:white;z-index: 1">
     <div class="flex align-center justify-around" style="width:50%;">
-        <img src="icons/main-top-logo.png" alt="" title="Всех посетителей с именем Валерий, угостим бесплатно!" style="width: 80px">
+        <img src="icons/main-top-logo.png" alt="" title="Всех посетителей с именем Валерий, угостим бесплатно!"
+             style="width: 80px">
         <a href="" class="text-white">Pricing</a>
         <a href="" class="text-white"> Courses</a>
         <a href="" class="text-white">Blog</a>
@@ -26,10 +36,34 @@
     </div>
 </header>
 <main>
-<section>
-    <img src="images/background.webp" alt=""
-    style="width: 100%">
-</section>
+    <section>
+        <video
+                loop="loop"
+                autoplay="autoplay"
+                playsinline="" muted="muted"
+                class="main-video"
+        >
+            <source
+                    src="videos/galaxy.b6c8fb5.mp4"
+                    type="video/mp4"
+            >
+        </video>
+        <div style="max-width:540px; background-color: darkslategray; font-size: 20px;">
+            <h1 style="font-size:60px" class="font-lato">
+                Turbocharge your <span class="development-career-color"> development career </span>
+            </h1>
+            <p style="max-width: 449px " class="text-white">
+                Chris Courses provides students professionals a college level web development education
+            </p>
+        </div>
+        <button>
+            Get started
+        </button>
+    </section>
+    <!--<section class="position">-->
+    <!--    <img src="images/background.webp" alt=""-->
+    <!--    style="width: 100%">-->
+    <!--</section>-->
 </main>
 </body>
 </html>

@@ -93,3 +93,33 @@ a {
     font-weight:bold;
     text-transform:capitalize;
 }
+.position {
+    position:relative;
+    top:-70px;
+}
+.relative {
+    position:relative;
+}
+.main-video {
+    position: relative;
+    width: 100%;
+    top:-105px;
+    min-height: 550px;
+object-fit: cover;
+}
+.font-lato{
+    font-family: 'Lato', sans-serif;
+}
+.development-career-color{
+    color:#0055ff;
+}
+.text-white{
+    color:cornsilk;
+}
+
+h1 {
+    margin:0;
+}
+p {
+    margin:0;
+}
