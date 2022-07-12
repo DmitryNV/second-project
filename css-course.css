@@ -8,10 +8,6 @@ body {
     background-color: #7f7faa;
 }
 
-.text-white {
-
-}
-
 .block {
     display: block;
 }
@@ -63,15 +59,15 @@ body {
     padding-left: 3px;
 }
 
-.py {
-    padding-top: 8px;
-    padding-bottom: 8px;
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
 
 }
 
-.px {
-    padding-left: 8px;
-    padding-right: 8px;
+.px-28 {
+    padding-left: 28px;
+    padding-right: 28px;
 }
 
 .font-pacifico {
@@ -90,36 +86,116 @@ a {
     color: white;
     background-color: darkturquoise;
     font-size: 20px;
-    font-weight:bold;
-    text-transform:capitalize;
-}
-.position {
-    position:relative;
-    top:-70px;
-}
-.relative {
-    position:relative;
-}
-.main-video {
-    position: relative;
-    width: 100%;
-    top:-105px;
-    min-height: 550px;
-object-fit: cover;
-}
-.font-lato{
-    font-family: 'Lato', sans-serif;
-}
-.development-career-color{
-    color:#0055ff;
-}
-.text-white{
-    color:cornsilk;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
-h1 {
-    margin:0;
+.position {
+    position: relative;
+    top: -70px;
 }
-p {
-    margin:0;
+
+.position-relative {
+    position: relative;
 }
+
+.main-video {
+    width: 100%;
+    height: 689px;
+    object-fit: cover;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+.text-brand-color {
+    color: #0055ff;
+}
+
+.text-white {
+    color: cornsilk;
+}
+
+h1, p {
+    margin: 0;
+}
+
+.bg-white-color {
+    background-color: white;
+}
+
+.border-none {
+    border: none;
+}
+
+.rounded-full {
+    border-radius: 12px;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.mx {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 600px) {
+    .sm-bg-blue {
+        background-color: #0055ff;
+    }
+}
+
+@media (max-width: 600px) {
+    .resize-button {
+        background-color: #630857;
+    }
+}
+
+@media (max-width: 750px) {
+    .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .login {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+.text-20 {
+    font-size: 20px;
+}
+
+.text-36 {
+    font-size: 36px;
+}
+
+.text-60 {
+    font-size: 60px;
+}
+
+    .bg-yellow {
+        background-color: #bfbd23;
+    }
+
+@media (max-width: 640px)
+{
+    .sm-text-60 {
+        font-size: 60px;
+    }
+    .sm-text-20 {
+        font-size: 20px;
+    }
+     .sm-text-16{
+         font-size: 16px;
+     }
+     .sm-bg-blue {
+         background-color: #2f0553;
+     }
+}
+
