@@ -1,261 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <link rel="icon" href="icons/main_logo.svg">
     <meta charset="UTF-8">
-    <meta name="author" content="Dmitriy Novikov">
-    <meta name="description" content="This page about products which contains the information about fast food">
-    <link rel="icon" href="images/logo.jpg">
-    <link rel="stylesheet" href="css/main.css?v=5">
-    <title>
-        Есть поесть!
-    </title>
+    <title>Title</title>
+    <!--    css styles start-->
+    <link rel="stylesheet" href="css-course.css?v=18">
+    <!--    css styles end-->
+
+    <!--    css fonts start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+          rel="stylesheet">
+    <!--    css fonts end-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<header>
-    <div class="top">
-        <section> <img src="icons/logo-white.svg" alt=""> </section>
-        <section> <img src="icons/Ico_small_time.svg" width="18"> Работаем ежедневно с 10-00-23-00</section>
-    <section> <img src="icons/Ico_small_place.svg" width="18">Наш адрес ООО ЕстьПоесть, 246034, г.Гомель, ул.Лещинская, д.153Б</section>
-    <section> <img src="icons/Ico_small_phone.svg">Life +375(25)639-96-95</section>
+<header class="flex justify-between align-center padding-header font-pacifico position-relative mx sm-bg-blue"
+        style="color:white; z-index: 1; max-width: 1200px">
+    <div class="flex align-center justify-around" style="width:50%;">
+        <img src="icons/main-top-logo.png" alt="" title="Всех посетителей с именем Валерий, угостим бесплатно!" class="logo"
+             style="width: 80px">
+        <a href="" class="text-white">Pricing</a>
+        <a href="" class="text-white"> Courses</a>
+        <a href="" class="text-white">Blog</a>
+        <a href="" class="text-white">Forum</a>
     </div>
-    <nav>
-        <ul>
-            <li>
-                <a href="#товары">Мы предлагаем</a>
-            </li>
-            <li>
-                <a href="#navigations">Navigation</a>
-            </li>
-            <li>
-                <a href="/aboutus">О нас</a>
-            </li>
-        </ul>
-        <section>
-            Наши партнеры<a href="https://estpoest-gomel.by/" target="_blank"> здесь</a>
-        </section>
-    </nav>
-    <h1>Приветствуем Вас на нашем сайте!</h1>
-    <hr>
+    <div class="flex justify-evenly align-center login" style="width:20%;">
+        <a href="" class="text-whites margin">Login</a>
+        <button class="button font-pacifico">
+            Sign Up
+        </button>
+    </div>
 </header>
 <main>
-    <section id="navigations">
-        <ul>
-            <li>
-                <img src="icons/Ico_drinks.svg" width="18" alt=""> Напитки
-            </li>
-            <li>
-            <img src="icons/Ico_pizza.svg" width="18">Пицца
-            </li>
-            <li>
-                <img src="icons/Ico_sushi.svg" width="18"> Суши;
-            </li>
-            <li>
-                <img src="icons/Ico_shoarma.svg" width="18">Шаурма;
-            </li>
-            <li>
-                <img src="icons/Ico_promos.svg" width="18" alt=""> Скидки
-            </li>
-            <li>
-                <img src="icons/Ico_basket%20(1).svg"width="18" alt=""> Корзина
-            </li>
-        </ul>
-    </section>
-    <section id="товары">
-        <details>
-           <summary>
-               Наши оснавные категории
-           </summary>
-            <dl>
-                <dt>Пиццы</dt>
-                <dd>Баварская</dd>
-                <dd>Техасская</dd>
-                <dd>Охотничья</dd>
-                <dd>Сытый итальянец</dd>
-                <dd>Каприз</dd>
-                <dt>Шаурма</dt>
-
-                <dt>Горячие блюда</dt>
-                <dd>Наггетсы</dd>
-                <dd>Картофель фри</dd>
-
-                <dt>Комбо</dt>
-                <dd>Для двоих</dd>
-                <dd>Комбо есть все</dd>
-                <dd>Есть поесть</dd>
-
-                <dt>Напитки</dt>
-                <dd>Pepsi</dd>
-                <dd>Coca Cola</dd>
-                <dd>Sprite</dd>
-                <dd>Fanta</dd>
-                <dd>Акции</dd>
-            </dl>
-        </details>
-        <details>
-            <summary>
-                Подробно о наших пиццах
-            </summary>
-            <table>
-                <thead>
-                <tr>
-                    <th>№</th>
-                    <td>Название</td>   <td>Время доставки</td>   <td>Каллории</td><td>Цена</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>Баварская</td>      <td>30-40 минут</td>      <td>450 грамм</td> <td>5 рублей</td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td>Палермо</td>    <td> 45-50 минут</td>       <td> 500 грамм</td> <td> 6 рублей</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>Гавайская</td>    <td> 55-50 минут</td>       <td> 300 грамм</td> <td> 4 рублей</td>
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <td>Шаурма</td> <td colspan="3">Информация отсутствует</td>
-                </tr>
-                <tr>
-                    <th>5</th>
-                    <td>
-                        Гавайская c
-                        ананасами
-                    </td>               <td rowspan="3"> 55-50 минут</td>   <td> 315 грамм</td> <td rowspan="2"> 4 рублей</td>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <td>Гавайская</td>                                           <td> 300 грамм</td>
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr>
-                    <td colspan="5">
-                        За подробной информацией обращайтесь к нашему виртуальному помощнику
-                    </td>
-                </tr>
-                </tfoot>
-            </table>
-        </details>
-    </section>
     <section>
-        <form action="save-data.php" method="get">
-            <table>
-                <tr>
-                    <td>
-                        <label for="firstname">Имя</label>
-                    </td>
-                    <td>
-                        <input
-                                name="firstname"
-                                type="text"
-                                placeholder="Ваше имя"
-                                id="firstname"
-                                required
-                        >
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lastname">Фамилия</label>
-                    </td>
-                    <td>
-                        <input
-                                name="lastname"
-                                type="text"
-                                placeholder="Ваше фамилия"
-                                id="lastname"
-                                required
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Электронная почта</label>
-                    </td>
-                    <td>
-                        <input
-                                name="email"
-                                type="email"
-                                placeholder="Электронная почта"
-                                id="email"
-                                required
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="phone">Телефон</label>
-                    </td>
-                    <td>
-                        <input
-                                name="phone"
-                                type="tel"
-                                placeholder="Телефон"
-                                id="phone"
-                                required
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="age">Возрост</label>
-                    </td>
-                    <td>
-                        <input
-                                name="age"
-                                type="number"
-                                placeholder="Возрост"
-                                id="age" min="18" max="90" step="1" value="1"
-                                required
-                        >
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="profession">Работа</label>
-                    </td>
-                    <td>
-                        <select
-                                name="profession"
-                                id="profession"
-                                required
-
-                        >
-                            <option value="cleaner">Уборщик</option>
-                            <option value="guard">Охрана</option>
-                            <option value="shop_assistant" selected>Продавец</option>
-                        </select>
-                    </td>
-                </tr>
-            </table>
-            <button type="submit">
-                Отправить
-            </button>
-        </form>
+        <video
+                loop="loop"
+                autoplay="autoplay"
+                playsinline="" muted="muted"
+                class="main-video position-absolute" style="top:0px; z-index: -1"
+        >
+            <source
+                    src="videos/galaxy.b6c8fb5.mp4"
+                    type="video/mp4"
+            >
+        </video>
+        <div class="mx" style="max-width:1200px">
+            <div style="font-size:20px;margin: 20px; max-width: 580px">
+                <h1 class="font-lato text-white text-60 text-36">
+                    Turbocharge your <span class="text-brand-color"> development career </span>
+                </h1>
+                <p style="max-width: 449px; margin-top:30px " class="text-white text-20 "; >
+                    Chris Courses provides students professionals a college level web development education
+                </p>
+                <button style="margin-top: 30px;" class="resize-button"
+                        class="bg-white-color text-brand-color border-none py-12 px-28 rounded-full">
+                    Get started
+                </button>
+            </div>
+        </div>
     </section>
+    <!--<section class="position">-->
+    <!--    <img src="images/background.webp" alt=""-->
+    <!--    style="width: 100%">-->
+    <!--</section>-->
 </main>
-<footer>
-    <hr>
-    <p>
-        &lt;&lt;&lt;&copy; About us <a href="#"> Click here</a>&gt;&gt;&gt;
-    </p>
-    <p>
-        <a href="images/logo.jpg" download> Скачать лого</a>
-    </p>
-    <p>
-        <a href="#"> Back to the page</a>
-    </p>
-    <figure>
-        <img src="images/pizza1.avif" title="Bavarskya" width="200" loading="lazy" alt="">
-        <figcaption>Баварская</figcaption>
-    </figure>
-</footer>
-
+<div class="text-20 sm-text-60 bg-yellow sm-bg-blue">
+    Привет
+</div>
 </body>
 </html>
