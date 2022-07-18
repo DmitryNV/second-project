@@ -8,9 +8,9 @@ body {
     background-color: #7f7faa;
 }
 
-.block {
-    display: block;
-}
+/*.block {*/
+/*    display: block;*/
+/*}*/
 
 .inline {
     display: inline;
@@ -18,14 +18,6 @@ body {
 
 .inline-block {
     display: inline-block;
-}
-
-.hidden {
-    display: none;
-}
-
-.flex {
-    display: flex;
 }
 
 .justify-between {
@@ -48,10 +40,6 @@ body {
     align-items: center;
 }
 
-.margin {
-    margin: 20px;
-}
-
 .padding-header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -59,16 +47,16 @@ body {
     padding-left: 3px;
 }
 
-.py-12 {
-    padding-top: 12px;
-    padding-bottom: 12px;
+/*!*.py-12 {*!*/
+/*!*    padding-top: 12px;*!*/
+/*!*    padding-bottom: 12px;*!*/
 
-}
+/*}*/
 
-.px-28 {
-    padding-left: 28px;
-    padding-right: 28px;
-}
+/*!*.px-10 {*!*/
+/*!*    padding-left: 10px;*!*/
+/*!*    padding-right: 10px;*!*/
+/*}*/
 
 .font-pacifico {
     font-family: 'Pacifico', cursive;
@@ -81,10 +69,7 @@ a {
 }
 
 .button {
-    border-top-right-radius: 50%;
-    border-color: white;
     color: white;
-    background-color: darkturquoise;
     font-size: 20px;
     font-weight: bold;
     text-transform: capitalize;
@@ -103,6 +88,20 @@ a {
     width: 100%;
     height: 689px;
     object-fit: cover;
+}
+
+.h-689px {
+    height: 689px;
+}
+
+.h-400px {
+    height: 400px;
+}
+
+@media (min-width: 768px) {
+    .md\:h-689px {
+        height: 689px;
+    }
 }
 
 .font-lato {
@@ -137,28 +136,15 @@ h1, p {
     position: absolute;
 }
 
-.mx {
-    margin-right: auto;
-    margin-left: auto;
+/*.mx {*/
+/*    margin-right: 5px;*/
+/*    margin-left: 5px;*/
+/*}*/
+
+.mt-20 {
+    margin-top: 20px;
 }
 
-@media (min-width: 600px) {
-    .sm-bg-blue {
-        background-color: #0055ff;
-    }
-}
-
-@media (max-width: 600px) {
-    .resize-button {
-        background-color: #630857;
-    }
-}
-
-@media (max-width: 750px) {
-    .logo {
-        display: none;
-    }
-}
 
 @media (max-width: 700px) {
     .login {
@@ -167,6 +153,7 @@ h1, p {
         flex-wrap: wrap;
     }
 }
+
 .text-20 {
     font-size: 20px;
 }
@@ -179,23 +166,53 @@ h1, p {
     font-size: 60px;
 }
 
-    .bg-yellow {
-        background-color: #bfbd23;
-    }
+.bg-yellow {
+    background-color: #bfbd23;
+}
 
-@media (max-width: 640px)
-{
+@media (max-width: 640px) {
     .sm-text-60 {
         font-size: 60px;
     }
+
     .sm-text-20 {
         font-size: 20px;
     }
-     .sm-text-16{
-         font-size: 16px;
-     }
-     .sm-bg-blue {
-         background-color: #2f0553;
-     }
+
+    .sm-text-16 {
+        font-size: 16px;
+    }
+
+    .flex {
+        display: flex;
+    }
 }
 
+@media (max-width: 640px) {
+    header, a {
+        margin-left: 6px;
+        margin-right: 6px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .video {
+        height: 10px;
+    }
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.background-white{
+    background-color: white;
+}
+.border-red{
+    border: red solid 2px
+}
+@media (min-width: 768px) {
+.md\:flex-row {
+    flex-direction: row;
+}
+}
